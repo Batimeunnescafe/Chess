@@ -1,0 +1,36 @@
+.menuNavegacion {
+    li {
+        list-style: none;
+
+        &:hover>ul {
+            display: block;
+            color: black;
+        }
+
+        a {
+            font-size: 1rem;
+            display: flex;
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+                display: block;
+            }
+        }
+
+        ul {
+            text-decoration: none;
+            display: none;
+            list-style: none;
+        }
+    }
+
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}

@@ -1,0 +1,83 @@
+#divR {
+    margin: 15px;
+    text-align: center;
+    border: white 2px solid;
+}
+
+
+.piezas {
+    flex-wrap: nowrap;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    align-content: center;
+    margin: 10px;
+
+    &:hover p {
+        width: 300px;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    &:hover {
+        background-image: linear-gradient(to top, white, black);
+        background-color: black;
+        transform: scale(1.5, 1.5);
+    }
+
+    img {
+        max-width: 250px;
+        min-width: 100px;
+    }
+
+}
+
+.flexR {
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.piezasL {
+    list-style: none;
+    color: white;
+}
+
+.redesR {
+    text-align: center;
+    color: white;
+}
+
+.titulo {
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(to top, black, grey);
+}
+
+.segundoTitulo {
+    font-style: oblique;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+}
+
+.fondoReglas {
+    background-image: url(../imagenes/fondo.jpg);
+}
+
+.parrafoReglas {
+    margin: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+}
+
+.tablaR {
+    max-width: 50%;
+    color: white;
+    margin: auto;
+    text-align: center;
+}

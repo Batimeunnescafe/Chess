@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Piezas, caballos, alfiles, valor, calcular">
+    <meta name="description" content="Aprende Ajedrez básico, desde sus piezas hasta el valor de cada una">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../chess_piece_king.png">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Reglas del juego</title>
+</head>
+
+<body>
+    <div class="fondoReglas">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav menuNavegacion">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="ranking-fide.html">Ranking FIDE</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="reglas-del-juego.html">Reglas del juego</a>
+                      </li>
+                      <li class="nav-item relative">
+                        <a class="nav-link" href="aperturas-y-defensas.html">Aperturas y defensas</a>
+                        <ul class="absolute">
+                            <li><a href="aperturas-y-defensas.html#aperturas">Aperturas</a></li>
+                            <li><a href="aperturas-y-defensas.html#defensas">Defensas</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contactanos.html">Contáctanos</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <main>
+            <div class="gridR">
+                <h1 class="titulo">¿Cómo jugar al Ajedrez?</h1>
+                <header class="segundoTitulo">Las reglas del juego</header>
+                <div id="divR">
+                    <p class="parrafoReglas">Para comenzar este camino de aprendizaje, empezaremos por lo básico. En el
+                        Ajedrez juegan piezas blancas contra piezas negras, cada una juega con 16 piezas, las cuales son (en
+                        órden de importancia) las siguientes:
+                    </p>
+                    <ul class="piezasL">
+                        <li>Rey</li>
+                        <li>Dama</li>
+                        <li>Torres</li>
+                        <li>Alfiles y caballos</li>
+                        <li>Peones</li>
+                    </ul>
+                    <p class="parrafoReglas">Cada una de las piezas detalladas arriba tienen su propio valor, valor que
+                        puede variar dependiendo de la situación, pero trataremos de explicarnos lo mejor posible usando una
+                        tabla.</p>
+                        <div class="table-responsive">
+                            <table class="tablaR table table-bordered">
+                                <tr>
+                                    <th>Pieza</th>
+                                    <th>Valor en apertura</th>
+                                    <th>Valor en medio juego</th>
+                                    <th>Valor en finales</th>
+                                    <th>Valor en final de peones</th>
+                                </tr>
+                                <tr>
+                                    <td>Rey</td>
+                                    <td>1 punto</td>
+                                    <td>1 punto</td>
+                                    <td>1.5 puntos</td>
+                                    <td>9 puntos</td>
+                                </tr>
+                                <tr>
+                                    <td>Dama</td>
+                                    <td>9 puntos</td>
+                                    <td>9 puntos</td>
+                                    <td>9 puntos</td>
+                                    <td>No participa</td>
+                                </tr>
+                                <tr>
+                                    <td>Torre</td>
+                                    <td>5 puntos</td>
+                                    <td>5 puntos</td>
+                                    <td>5.5 - 6 puntos</td>
+                                    <td>No participa</td>
+                                </tr>
+                                <tr>
+                                    <td>Alfiles y caballos</td>
+                                    <td>3 puntos</td>
+                                    <td>3 - 3.5 puntos</td>
+                                    <td>3.5 - 4 puntos</td>
+                                    <td>No participa</td>
+                                </tr>
+                                <tr>
+                                    <td>Peones</td>
+                                    <td>1 punto</td>
+                                    <td>1 punto</td>
+                                    <td>1 punto</td>
+                                    <td>1 punto</td>
+                                </tr>
+                            </table>
+                        </div>
+                    <section class="flexR">
+                        <div class="piezas">
+                            <p class="parrafoReglas">
+                                Ya conociendo la parte matemática del juego (que después nos ayudará a
+                                <strong>calcular</strong>) vamos a ver cómo se mueve cada una de las piezas: Los peones
+                                pueden moverse <strong>sólo</strong> dos casillas hacia adelante en el
+                                <strong>primer
+                                    movimiento</strong>, una vez pasado el primer movimiento de cada peón, deberá avanzar
+                                siempre en una casilla (aunque es posible que en el primer movimiento de cada uno se
+                                prefiera avanzar sólo
+                                una casilla) como lo veremos en la siguiente imagen
+                            </p>
+                            <img src="../imagenes/peones.png" alt="Peones">
+                        </div>
+                        <div class="piezas">
+                            <p class="parrafoReglas">
+                                Pasemos ahora a ver cómo se mueven caballos, ya que son las únicas piezas del tablero que
+                                pueden "saltarse" a otras piezas y además no tienen un movimiento recto, sino que se mueven
+                                en "L", tal como lo veremos en esta imagen
+                            </p>
+                            <img src="../imagenes/caballo.png" alt="Caballo">
+                        </div>
+                        <div class="piezas">
+                            <p class="parrafoReglas">
+                                Los alfiles por su parte, tienen un recorrido recorrido rectilíneo pero tomando siempre una
+                                diagonal, junto con la dama es la única pieza que puede moverse más de una casilla en
+                                diagonal, pero, para ver esto más claro, veamos una imagen.
+                            </p>
+                            <img src="../imagenes/alfil.png" alt="Alfil">
+                        </div>
+                        <div class="piezas">
+                            <p class="parrafoReglas">
+                                Junto con el alfil, la <strong>torre</strong> es la única pieza que tiene restringido su
+                                movimiento, ya que el alfil sólo puede moverse en las diagonales y la torre (como veremos a
+                                continuación) sólo puede moverse hacia los
+                                lados (incluyendo arriba y abajo)
+                            </p>
+                            <img src="../imagenes/torre.png" alt="Torre">
+                        </div>
+                        <div class="piezas">
+                            <p class="parrafoReglas">
+                                Y por último tenemos a la pareja, a las dos piezas más importantes del juego, al rey y a la
+                                dama. Estos dos pueden moverse en cualquier dirección y en cualquier sentido, no tienen
+                                restrcción de movimiento, aunque cabe aclarar que el rey sólo puede avanzar
+                                una casilla a la vez, mientras que la dama puede moverse libremente por el tablero.
+                            </p>
+                            <img src="../imagenes/rey y dama.png" alt="Rey y dama">
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+            <footer class="redesR">
+            </footer>
+    </div>
+</body>
+
+</html>
