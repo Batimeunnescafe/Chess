@@ -243,8 +243,8 @@ textarea {
 
 @media (min-width: 0px) and (max-width: 425px) {
   .flex img {
-    width: 100px;
-    height: 100px; }
+    width: 150px;
+    height: 150px; }
   .flex p {
     font-size: .6rem; }
   .header {
