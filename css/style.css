@@ -9,6 +9,7 @@
     color: white;
     text-decoration: none; }
     .menuNavegacion li a:hover {
+      color: grey;
       display: block; }
   .menuNavegacion li ul {
     text-decoration: none;
@@ -45,9 +46,7 @@
 
 .grid {
   display: grid;
-  grid-template-areas: "navegacion navegacion navegacion"
- "contenido contenido contenido"
- "contenido contenido contenido"; }
+  grid-template-areas: "navegacion navegacion navegacion" "contenido contenido contenido" "contenido contenido contenido"; }
 
 .header {
   max-width: 100vw;
@@ -157,8 +156,8 @@
   color: white; }
 
 .fondoReglas {
-  background-color: #191516;
-}
+  background-color: #191516; }
+
 .parrafoReglas {
   margin: 10px;
   font-family: 'Roboto Condensed', sans-serif;
@@ -185,7 +184,13 @@
   font-style: italic;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
 
-.tituloH2 {
+#aperturas {
+  color: white;
+  padding-top: 20px;
+  text-align: center;
+  padding-bottom: 20px; }
+
+#defensas {
   color: white;
   padding-top: 20px;
   text-align: center;
