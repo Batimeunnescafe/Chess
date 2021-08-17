@@ -1,20 +1,21 @@
 .menuNavegacion {
     li {
+        color: white;
         list-style: none;
 
         &:hover>ul {
             display: block;
-            color: black;
+            color: white;
         }
 
         a {
             font-size: 1rem;
             display: flex;
-            color: white;
+            color: grey;
             text-decoration: none;
 
             &:hover {
-                color: grey;
+                color: white;
                 display: block;
             }
         }

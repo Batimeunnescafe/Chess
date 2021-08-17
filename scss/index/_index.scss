@@ -35,12 +35,12 @@
 .header {
     max-width: 100vw;
     grid-area: navegacion;
-    max-height: 10vh;
+    max-height: 30vh;
 }
 
 .main {
     display: flex;
-    max-width: 100vw;
+    width: 100vw;
     height: 100vh;
     grid-area: contenido;
     align-content: center;
