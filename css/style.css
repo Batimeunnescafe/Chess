@@ -218,6 +218,10 @@
   width: 100vw;
   flex-direction: row; }
 
+@keyframes faded {
+  0% {
+    opacity: 0; } }
+
 .tituloInicio {
   position: relative;
   padding-top: 10vh;
@@ -225,9 +229,11 @@
   font-size: 2.5rem;
   font-style: italic;
   text-align: center;
-  color: black; }
+  color: black;
+  animation: faded 1s ease forwards; }
 
 .subtituloInicio {
+  animation: faded 1s ease forwards;
   position: relative;
   padding-bottom: 50px;
   font-size: 1.8rem;
@@ -242,11 +248,13 @@
     max-height: 90vh; }
 
 .parrafoInicio {
+  animation: faded 1s ease forwards;
   position: relative;
   color: black;
   font-size: 1.5rem; }
 
 .listaDes {
+  animation: faded 1s ease forwards;
   position: absolute; }
   .listaDes li {
     color: black;
