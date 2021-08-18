@@ -1,9 +1,14 @@
 @keyframes faded {
-    0%{
+    0% {
         opacity: 0;
+        transform: translateY(30px);
     }
-
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
+
 .tituloInicio {
     position: relative;
     padding-top: 10vh;
@@ -11,7 +16,7 @@
     font-size: 2.5rem;
     font-style: italic;
     text-align: center;
-    color: black;
+    color: white;
     animation: faded 1s ease forwards
 }
 
@@ -20,13 +25,23 @@
     position: relative;
     padding-bottom: 50px;
     font-size: 1.8rem;
-    color: black;
+    color: white;
     text-align: center;
 }
 
+.gridInicio {
+    display: grid;
+    grid-template-areas:
+        "navegacion"
+        "contenido"
+
+}
+
 .divInicio {
+    display: flex;
     max-height: 90vh;
     position: relative;
+    justify-content: center;
 
     img {
         position: absolute;
@@ -38,7 +53,7 @@
 .parrafoInicio {
     animation: faded 1s ease forwards;
     position: relative;
-    color: black;
+    color: white;
     font-size: 1.5rem;
 }
 
@@ -47,7 +62,7 @@
     position: absolute;
 
     li {
-        color: black;
+        color: white;
         font-size: 1.4rem;
     }
 }

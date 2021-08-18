@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .menuNavegacion li {
   color: white;
   list-style: none; }
@@ -220,7 +221,11 @@
 
 @keyframes faded {
   0% {
-    opacity: 0; } }
+    opacity: 0;
+    transform: translateY(30px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0px); } }
 
 .tituloInicio {
   position: relative;
@@ -229,7 +234,7 @@
   font-size: 2.5rem;
   font-style: italic;
   text-align: center;
-  color: black;
+  color: white;
   animation: faded 1s ease forwards; }
 
 .subtituloInicio {
@@ -237,12 +242,18 @@
   position: relative;
   padding-bottom: 50px;
   font-size: 1.8rem;
-  color: black;
+  color: white;
   text-align: center; }
 
+.gridInicio {
+  display: grid;
+  grid-template-areas: "navegacion" "contenido"; }
+
 .divInicio {
+  display: flex;
   max-height: 90vh;
-  position: relative; }
+  position: relative;
+  justify-content: center; }
   .divInicio img {
     position: absolute;
     width: 100vw;
@@ -251,14 +262,14 @@
 .parrafoInicio {
   animation: faded 1s ease forwards;
   position: relative;
-  color: black;
+  color: white;
   font-size: 1.5rem; }
 
 .listaDes {
   animation: faded 1s ease forwards;
   position: absolute; }
   .listaDes li {
-    color: black;
+    color: white;
     font-size: 1.4rem; }
 
 @media (min-width: 0px) and (max-width: 425px) {
@@ -316,3 +327,31 @@
 .flex img {
   max-height: 250px;
   max-width: 250px; }
+
+/**MediaQueries nueva sección**/
+@media (min-width: 0px) and (max-width: 767px) {
+  .divInicio .pawn {
+    display: none; }
+  .tituloInicio {
+    font-size: 1.8rem;
+    animation: faded 1s ease forwards; }
+  .listaDes {
+    animation: faded 1s ease forwards;
+    position: absolute; }
+    .listaDes li {
+      color: white;
+      font-size: 1rem; } }
+
+@media (min-width: 767px) and (max-width: 850px) {
+  .tituloInicio {
+    padding-top: 0%; }
+  .parrafoInicio {
+    font-size: 1.5rem;
+    color: white; }
+  .listaDes {
+    color: white;
+    animation: faded 1s ease forwards;
+    position: absolute; }
+    .listaDes li {
+      color: white;
+      font-size: 1.4rem; } }
