@@ -241,6 +241,7 @@
   text-align: center; }
 
 .divInicio {
+  max-height: 90vh;
   position: relative; }
   .divInicio img {
     position: absolute;
