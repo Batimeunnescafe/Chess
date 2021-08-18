@@ -9,12 +9,14 @@
         }
 
         a {
+            background-color: black;
             font-size: 1rem;
             display: flex;
             color: grey;
             text-decoration: none;
 
             &:hover {
+                background-color: black;
                 color: white;
                 display: block;
             }

@@ -5,11 +5,13 @@
     display: block;
     color: white; }
   .menuNavegacion li a {
+    background-color: black;
     font-size: 1rem;
     display: flex;
     color: grey;
     text-decoration: none; }
     .menuNavegacion li a:hover {
+      background-color: black;
       color: white;
       display: block; }
   .menuNavegacion li ul {
@@ -216,30 +218,39 @@
   width: 100vw;
   flex-direction: row; }
 
-.marginC {
-  margin: 10px; }
+.tituloInicio {
+  position: relative;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  font-size: 2.5rem;
+  font-style: italic;
+  text-align: center;
+  color: black; }
 
-.redes {
-  color: white;
-  list-style: none; }
-
-.formulario legend {
-  color: white;
-  margin: 10px;
+.subtituloInicio {
+  position: relative;
+  padding-bottom: 50px;
+  font-size: 1.8rem;
+  color: black;
   text-align: center; }
 
-.form {
-  text-align: left; }
+.divInicio {
+  position: relative; }
+  .divInicio img {
+    position: absolute;
+    width: 100vw;
+    max-height: 90vh; }
 
-.fondoC {
-  background-image: url(https://s1.1zoom.me/b5050/901/Chess_Black_background_Black_and_white_571896_1920x1080.jpg);
-  background-size: cover; }
+.parrafoInicio {
+  position: relative;
+  color: black;
+  font-size: 1.5rem; }
 
-input {
-  margin: 10px; }
-
-textarea {
-  margin: 10px; }
+.listaDes {
+  position: absolute; }
+  .listaDes li {
+    color: black;
+    font-size: 1.4rem; }
 
 @media (min-width: 0px) and (max-width: 425px) {
   .flex img {
