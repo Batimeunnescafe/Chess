@@ -83,36 +83,63 @@
             display: none;
         }
     }
+
     .tituloInicio {
         font-size: 1.8rem;
         animation: faded 1s ease forwards;
     }
+
     .listaDes {
         animation: faded 1s ease forwards;
         position: absolute;
-    
+
         li {
             color: white;
             font-size: 1rem;
         }
     }
 }
+
 @media (min-width: 767px) and (max-width:850px) {
     .tituloInicio {
         padding-top: 0%;
     }
+
     .parrafoInicio {
         font-size: 1.5rem;
         color: white;
     }
+
     .listaDes {
         color: white;
         animation: faded 1s ease forwards;
         position: absolute;
-    
+
         li {
             color: white;
             font-size: 1.4rem;
         }
+    }
+}
+
+//** MediaQueries Aperturas y Defensas**//
+@media (min-width: 0px) and (max-width:425px) {
+    .flexA {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 426px) and (max-width:767px) {
+    .flexA {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card {
+        min-width: 40%;
+        max-width: 50%;
     }
 }
