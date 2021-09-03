@@ -121,13 +121,6 @@
   max-width: 500px;
   align-content: center;
   margin: 10px; }
-  .piezas:hover p {
-    width: 300px;
-    text-align: center;
-    font-size: 1rem; }
-  .piezas:hover {
-    background-color: #5B5F97;
-    transform: scale(1.5, 1.5); }
   .piezas img {
     max-width: 250px;
     min-width: 100px; }
@@ -224,58 +217,14 @@
 .card-title {
   font-size: 1rem; }
 
-@keyframes faded {
-  0% {
-    opacity: 0;
-    transform: translateY(30px); }
-  100% {
-    opacity: 1;
-    transform: translateY(0px); } }
+.header {
+  color: #36A0FF;
+  font-size: 27px;
+  padding: 10px; }
 
-.tituloInicio {
-  position: relative;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-  font-size: 2.5rem;
-  font-style: italic;
-  text-align: center;
-  color: white;
-  animation: faded 1s ease forwards; }
-
-.subtituloInicio {
-  animation: faded 1s ease forwards;
-  position: relative;
-  padding-bottom: 50px;
-  font-size: 1.8rem;
-  color: white;
-  text-align: center; }
-
-.gridInicio {
-  display: grid;
-  grid-template-areas: "navegacion" "contenido"; }
-
-.divInicio {
-  display: flex;
-  max-height: 90vh;
-  position: relative;
-  justify-content: center; }
-  .divInicio img {
-    position: absolute;
-    width: 100vw;
-    max-height: 90vh; }
-
-.parrafoInicio {
-  animation: faded 1s ease forwards;
-  position: relative;
-  color: white;
-  font-size: 1.5rem; }
-
-.listaDes {
-  animation: faded 1s ease forwards;
-  position: absolute; }
-  .listaDes li {
-    color: white;
-    font-size: 1.4rem; }
+.bigicon {
+  font-size: 35px;
+  color: #36A0FF; }
 
 @media (min-width: 0px) and (max-width: 425px) {
   .flex img {

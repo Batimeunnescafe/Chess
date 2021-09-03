@@ -15,17 +15,6 @@
     align-content: center;
     margin: 10px;
 
-    &:hover p {
-        width: 300px;
-        text-align: center;
-        font-size: 1rem;
-    }
-
-    &:hover {
-        background-color: #5B5F97;
-        transform: scale(1.5, 1.5);
-    }
-
     img {
         max-width: 250px;
         min-width: 100px;
