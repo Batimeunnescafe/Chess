@@ -228,8 +228,7 @@
 
 .divContacto {
   background-image: url(../../imagenes/fondo.jpg);
-  background-size: cover;
-  display: flex; }
+  background-size: cover; }
 
 @media (min-width: 0px) and (max-width: 425px) {
   .flex img {
